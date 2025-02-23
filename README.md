@@ -1,2 +1,5 @@
 # Juegos
-Aplicacion desarrolada con JavaScript y Boostrap
+Aplicacion desarrollada con JavaScript y bootstra
+
+Se implementan las siguientes funcionalidades
+** Calculadora
