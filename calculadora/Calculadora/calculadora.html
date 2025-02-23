@@ -1,0 +1,51 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="./calculadora.js"></script>
+
+
+<div class="container" style="width: 350px">
+    <h1>Mi calculadora</h1>
+    <p></p>
+    <p></p>
+    <p></p>
+    <div class=" row" >
+        <form class="form-inline" >
+        <div class="form-group">
+            <label for="email">Resultado</label>
+            <input type="email" class="form-control" id="pantalla" disabled>
+          </div>
+        </form>
+    </div>
+    <table class= "table table-bordered">
+        <thead>
+            <tr  class="active">
+               <td class="text-center" onclick="agregarNum('7')">7</td> 
+               <td class="text-center" onclick="agregarNum('8')">8</td>
+               <td class="text-center" onclick="agregarNum('9')">9</td>
+               <td class="text-center" onclick="clearPantalla('cl')">cl</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  class="active">
+                <td class="text-center" onclick="agregarNum('4')">4</td>
+                <td class= "text-center" onclick="agregarNum('5')">5</td>
+                <td class= "text-center" onclick="agregarNum('6')">6</td>
+                <td class= "text-center" onclick="agregarFuncionalidad('*')">x</td>
+            </tr>
+            <tr class="active">
+                <td class="text-center" onclick="agregarNum('1')">1</td>
+                <td class="text-center" onclick="agregarNum('2')">2</td>
+                <td class="text-center" onclick="agregarNum('3')">3</td>
+                <td class="text-center" onclick="agregarFuncionalidad('/')">%</td>
+            </tr>
+            <tr  class="active">
+                <td class="text-center" onclick="agregarNum('0')">0</td>
+                <td class="text-center" onclick="agregarFuncionalidad('+')">+</td>
+                <td class="text-center" onclick="agregarFuncionalidad('-')">-</td>
+                <td class="text-center" onclick="mostrarPantalla()">=</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
