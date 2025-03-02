@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="./PiedraPapelTiejra.js"></script>
+<link rel="stylesheet" href="./PiedraPapelTijera.css">
+<div class=" container">
+    <h2>Juego de Piedra,Papel y Tijera</h2>
+    <p></p>
+    <div class="col-md-4">
+        Player one: <input type="text" id="name" onblur="myfunction ()">
+        <p>
+        <p>
+        <p> Selecione Uno</p>
+        <select id="selectJugador1" src="img" onchange="jugador1()">
+            <option value="piedra.jpg">piedra</option>
+            <option value="papel.jpg">Papel</option>
+            <option value="tijera.jpg">Tijera</option>
+        </select>
+        <img class="mi-imagen" id="imagen1" src="">
+    </div>
+    <div class="col-md-5">
+        Player two: <input type="text" id="name2" onblur="myfunction2 ()">
+        <p>
+        <p>
+        <p> Selecione Uno</p>
+        <select id="selectJugador2" src="img2" onchange="jugador2()">
+            <option value="piedra.jpg">piedra</option>
+            <option value="papel.jpg">Papel</option>
+            <option value="tijera.jpg">Tijera</option>
+        </select>
+        <img class="mi-imagen" id="imagen2" src="">
+    </div>
+</div>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<div class="text-center">
+    <button type="button" class="btn btn-success" class="col-md-push-4 " onclick="PLAY()">PLAY</button>
+</div>
+<p>
+<p>
+<p>
+<p>
+<div class=" text-center">
+    <p> El ganador es:
+    <p id="resultado"></p>
+</div>
