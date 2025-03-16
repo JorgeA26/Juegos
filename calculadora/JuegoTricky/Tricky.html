@@ -1,0 +1,68 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="./Tricky.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="./Tricky.js"></script>
+
+<div class="container">
+    <div class="row">
+        <h1> Juego Tricky </h1>
+    </div>
+    <div class="row text-center">
+        <dl>
+            <dt>De clic en Jugador 1 y selecciones "X" o "O"</dt>
+        </dl>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 text-center">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Jugador 1
+                <span class="caret"></span></button>
+            <ul class="dropdown-menu" id="jugador1">
+                <li onclick="seleccionEstrategiaX()"><a href="#">X</a></li>
+                <li onclick="seleccionEstrategiaO()"><a href="#">O</a></li>
+            </ul>
+            <div class="row">
+                <div class="text-center">
+                    <h4>Score 1</h4>
+                    <span id="score1">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 text-center">
+            <button class="btn btn-danger dropdown-toggle" type="button">Jugador 2</button>
+            <div class="row">
+                <div class="text-center">
+                    <h4>Score 2</h4>
+                    <span id="score2">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Tablero del juego -->
+<div class="container centrarElementos" id="tabla">
+    <div class="row margenSuperior">
+        <div class="bordeTotal col-sm-2 col-sm-offset-3" id="celda1" onclick="colocarImagenEnCelda(0)"></div>
+        <div class="bordeTotal col-sm-2" id="celda2" onclick="colocarImagenEnCelda(1)"></div>
+        <div class="bordeTotal col-sm-2" id="celda3" onclick="colocarImagenEnCelda(2)"></div>
+    </div>
+    <div class="row">
+        <div class="bordeTotal col-sm-2 col-sm-offset-3" id="celda4" onclick="colocarImagenEnCelda(3)"></div>
+        <div class="bordeTotal col-sm-2" id="celda5" onclick="colocarImagenEnCelda(4)"></div>
+        <div class="bordeTotal col-sm-2" id="celda6" onclick="colocarImagenEnCelda(5)"></div>
+    </div>
+    <div class="row">
+        <div class="bordeTotal col-sm-2 col-sm-offset-3" id="celda7" onclick="colocarImagenEnCelda(6)"></div>
+        <div class="bordeTotal col-sm-2" id="celda8" onclick="colocarImagenEnCelda(7)"></div>
+        <div class="bordeTotal col-sm-2" id="celda9" onclick="colocarImagenEnCelda(8)"></div>
+    </div>
+    <p></p>
+    <p></p>
+</div>
+<div class="row text-center">
+    <div class="col-sm-12">
+        <button class="btn btn-success" type="text" id="Siguiente" onclick="Siguiente()">Volver a Jugar</button>
+        <button class="btn btn-warning" type="text" id="reiniciar" onclick="Reiniciar()">Reiniciar</button>
+    </div>
+</div>

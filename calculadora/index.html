@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
@@ -8,14 +9,41 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  
+  <script src="./index.js"></script>
+
+
+
 </head>
+
 <body>
 
-    <p></p>
-    <!--<iframe src="./Calculadora/calculadora.html" style="width: 100%; height:700px;"></iframe>-->
-  <!--<iframe src="./PiedraPapelTijera/index.html" style="width: 100%; height:700px;"></iframe>-->
-  <iframe src = "./Cronometro/index.html" style="width: 100%; height:700px;"></iframe>"
-
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">Mis Juegos</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span
+              class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" onclick="Cronometro()">Cronometro</a></li>
+            <li><a href="#" onclick="calculadora()">Calculadora</a></li>
+            <li><a href="#" onclick="PiedraPapelTijera()">Piedra-Papel-Tijera</a></li>
+            <li><a href="#" onclick="Tricky()">Juego-Tricky</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <iframe src="./Calculadora/calculadora.html" style="width: 100%; height:700px;" id="calculadora"></iframe>
+    <iframe src="./PiedraPapelTijera/PiedraPapelTijera.html" style="width: 100%; height:700px;"
+      id="piedra-papel"></iframe>
+    <iframe src="./Cronometro/index.html" style="width: 100%; height:700px;" id="cronometro"></iframe>
+    <iframe src="./JuegoTricky/Tricky.html" style="width: 100%; height:700px;" id="Tricky"></iframe>
+  </div>
 </body>
 </html>

@@ -24,12 +24,16 @@ function contar() {
 }
 function inicioCronometro (){
     contar(); 
-    document.getElementById("ini").disabled = true;
+    //document.getElementById("ini").disabled = true;
+    document.getElementById("ini").style.display= "none"; 
+    
+    
 }
 
 function Pausa() {
     clearTimeout(cronometro); // funcion cleartimeout  cancela la funcion setTime antes de que se ejecute nuevamente 
-    document.getElementById("ini").disabled = false;
+    //document.getElementById("ini").disabled = false;
+    document.getElementById("ini").style.display= ""
 }
 
 
